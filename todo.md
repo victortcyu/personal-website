@@ -12,28 +12,28 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Go to repository Settings > Pages.
   - Set source to `main` branch and `/ (root)` folder.
   - Save and verify the generated URL (e.g., `https://<username>.github.io/personal-webpage`).
-- [ ] Install Python (if not already installed) for content generation.
+- [x] Install Python (if not already installed) for content generation.
 - [x] Add `.gitignore` with common ignores (e.g., `*.pyc`, `node_modules/`, `venv/`).
 
 ## 2. Content Preparation
-- [ ] Create a placeholder profile picture (`assets/images/profile-placeholder.jpg`).
-- [ ] Create placeholder hobby image (`assets/images/placeholder-hobby.jpg`).
-- [ ] Create `data/lessons.json` with placeholder life lessons:
+- [x] Create a placeholder profile picture (`assets/images/profile-placeholder.jpg`).
+- [x] Create placeholder hobby image (`assets/images/placeholder-hobby.jpg`).
+- [x] Create `data/lessons.json` with placeholder life lessons:
   ```json
   [
     { "id": 1, "title": "Placeholder Lesson", "description": "Details to be added." },
     { "id": 2, "title": "Placeholder Lesson", "description": "Details to be added." }
   ]
   ```
-- [ ] Create `data/placeholders.json` for other placeholder content (e.g., bio, research text).
+- [x] Create `data/placeholders.json` for other placeholder content (e.g., bio, research text).
 
 ## 3. Python Content Generation
-- [ ] Create `scripts/generate-content.py` to process content:
+- [x] Create `scripts/generate-content.py` to process content:
   - Read `data/lessons.json` and validate JSON structure.
   - Optionally, support markdown/CSV input for future content (e.g., publications).
   - Output processed JSON to `data/` for frontend use.
-- [ ] Test the script locally: `python scripts/generate-content.py`.
-- [ ] Document usage in `README.md` (e.g., how to update content).
+- [x] Test the script locally: `python scripts/generate-content.py`.
+- [x] Document usage in `README.md` (e.g., how to update content).
 
 ## 4. Frontend Development
 
@@ -51,7 +51,7 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
 - [ ] Add subtle cursor effect in `assets/js/main.js` (e.g., trailing particles).
 
 ### 4.2 Research and Academic Work Page
-- [ ] Create `pages/research.html`:
+- [x] Create `pages/research.html`:
   - Copy navigation and footer from `index.html`.
   - Add header: “Research and Academic Work.”
   - Add placeholder text: “This section will soon feature my publications, projects, and academic achievements.”
@@ -60,7 +60,7 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Reserve space for future card-based or accordion layout.
 
 ### 4.3 Hobbies Page
-- [ ] Create `pages/hobbies.html`:
+- [x] Create `pages/hobbies.html`:
   - Copy navigation and footer.
   - Add header: “Hobbies.”
   - Add placeholder text: “I’ll soon share my personal interests and passions here.”
@@ -69,7 +69,7 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Add fun cursor effect (e.g., ripple on hover) in `assets/js/cursor-effects.js`.
 
 ### 4.4 Life Lessons Page
-- [ ] Create `pages/life-lessons.html`:
+- [x] Create `pages/life-lessons.html`:
   - Copy navigation and footer.
   - Add header: “Life Lessons I’ve Learned.”
   - Dynamically load lessons from `data/lessons.json` using JavaScript.
@@ -90,7 +90,7 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Apply dark mode via `[data-theme="dark"]` selector.
 
 ### 4.6 Interactivity and Accessibility
-- [ ] Implement cursor effects in `assets/js/cursor-effects.js`:
+- [x] Implement cursor effects in `assets/js/cursor-effects.js`:
   - Use Canvas API or CSS for effects like trailing particles or ripples.
   - Disable effects on mobile (detect via `window.matchMedia`).
 - [ ] Add smooth scroll animations in `assets/js/main.js`:

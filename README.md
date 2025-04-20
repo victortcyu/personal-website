@@ -26,8 +26,14 @@ This is the personal webpage for Victor Yu, an EE undergraduate and quantum scie
 ## Updating Content
 
 - Edit `data/lessons.json` for Life Lessons.
+- Edit `data/placeholders.json` for bio and page content.
 - Replace placeholder images in `assets/images/`.
 - Modify HTML in `index.html` or files under `pages/`.
+- Run the content validation script:
+  ```bash
+  python scripts/generate-content.py
+  ```
+  This validates your JSON content files before deployment.
 
 ## Deployment
 

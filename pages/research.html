@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Victor Yu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="life-lessons.html">Life Lessons</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle light/dark mode">Toggle Theme</button>
+  </nav>
+  <main>
+    <section class="research">
+      <h1>Research and Academic Work</h1>
+      <p id="research-placeholder">This section will soon feature my publications, projects, and academic achievements.</p>
+      <div class="future-content">
+        <h2>Future Content</h2>
+        <ul>
+          <li>Publications</li>
+          <li>Research Projects</li>
+          <li>Academic Achievements</li>
+          <li>External Links (e.g., Google Scholar)</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul class="social-links">
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Load research content from placeholders.json
+    fetch('../data/placeholders.json')
+      .then(response => response.json())
+      .then(data => {
+        if (data.research) {
+          document.getElementById('research-placeholder').textContent = data.research;
+        }
+      })
+      .catch(error => console.error('Error loading placeholders:', error));
+  </script>
+</body>
+</html>

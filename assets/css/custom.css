@@ -73,10 +73,15 @@ section {
 
 /* Masthead adjustments */
 .masthead {
-  padding: 10rem 0;
-  min-height: 80vh;
+  padding: 6rem 0;
+  min-height: 60vh;
   display: flex;
   align-items: center;
+}
+
+/* Reduce name size on homepage */
+.mx-auto.my-0.text-uppercase {
+  font-size: 3rem; /* Smaller than default */
 }
 
 /* Improved footer */
@@ -120,15 +125,24 @@ section {
   }
 }
 
-/* Dark mode support (works with the existing theme toggle) */
+/* Navigation toggle adjustments */
+.navbar .nav-link {
+  padding: 0.5rem 0.75rem !important;
+}
+
+/* Dark mode support (lighter version) */
 [data-theme="dark"] .card {
-  background-color: #2d3748;
+  background-color: #3a4556;
   color: #e2e8f0;
 }
 
 [data-theme="dark"] .bg-white {
-  background-color: #2d3748 !important;
+  background-color: #3a4556 !important;
   color: #e2e8f0;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #2d3748 !important;
 }
 
 [data-theme="dark"] .text-black-50 {
@@ -136,11 +150,15 @@ section {
 }
 
 [data-theme="dark"] .list-group-item {
-  background-color: #2d3748;
+  background-color: #3a4556;
   color: #e2e8f0;
   border-color: #4a5568;
 }
 
 [data-theme="dark"] .list-group-item:hover {
   background-color: #4a5568;
+}
+
+[data-theme="dark"] .navbar {
+  background-color: rgba(45, 55, 72, 0.9) !important;
 }

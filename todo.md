@@ -44,18 +44,18 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Add hero section with placeholder profile picture and text: “Victor Yu, EE Undergraduate and undergraduate quantum science researcher at UCLA.”
   - Add placeholder bio paragraph.
   - Include footer with placeholder social media links.
-- [ ] Style `index.html` in `assets/css/styles.css`:
+- [x] Style `index.html` in `assets/css/styles.css`:
   - Use light blue accents (e.g., `#E0F7FA`, `#4FC3F7`) and white background.
   - Apply minimalistic sans-serif font (e.g., Inter via Google Fonts).
   - Ensure mobile responsiveness with CSS media queries.
-- [ ] Add subtle cursor effect in `assets/js/main.js` (e.g., trailing particles).
+- [x] Add subtle cursor effect in `assets/js/cursor-effects.js` (e.g., trailing particles).
 
 ### 4.2 Research and Academic Work Page
 - [x] Create `pages/research.html`:
   - Copy navigation and footer from `index.html`.
   - Add header: “Research and Academic Work.”
   - Add placeholder text: “This section will soon feature my publications, projects, and academic achievements.”
-- [ ] Style `research.html` in `assets/css/styles.css`:
+- [x] Style `research.html` in `assets/css/styles.css`:
   - Maintain consistent minimalistic design.
   - Reserve space for future card-based or accordion layout.
 
@@ -64,7 +64,7 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Copy navigation and footer.
   - Add header: “Hobbies.”
   - Add placeholder text: “I’ll soon share my personal interests and passions here.”
-- [ ] Style `hobbies.html`:
+- [x] Style `hobbies.html`:
   - Prepare grid layout for future hobby cards.
   - Add fun cursor effect (e.g., ripple on hover) in `assets/js/cursor-effects.js`.
 
@@ -74,11 +74,11 @@ This to-do list outlines the step-by-step process to build Victor Yu’s persona
   - Add header: “Life Lessons I’ve Learned.”
   - Dynamically load lessons from `data/lessons.json` using JavaScript.
   - Display lessons in numbered boxes (e.g., `<div class="lesson-box">1. Placeholder Lesson</div>`).
-- [ ] Style `life-lessons.html`:
+- [x] Style `life-lessons.html`:
   - Design aesthetic numbered boxes with hover effects (e.g., scale-up, shadow).
   - Use light blue borders or backgrounds for boxes.
   - Add fun cursor effect (e.g., color-changing trail).
-- [ ] Add JavaScript in `assets/js/main.js` to fetch and render `lessons.json`.
+- [x] Add JavaScript to fetch and render `lessons.json`.
 
 ### 4.5 Light/Dark Mode
 - [ ] Implement toggle in `assets/js/main.js`:
